@@ -1,0 +1,31 @@
+package Chapter14;
+
+public class insertion {
+
+    public static void sort(int arr[]) {
+        for (int i = 1; i < arr.length; i++) {
+            int curr = arr[i]; // store the value, not index
+            int prev = i - 1;
+
+            while (prev >= 0 && arr[prev] > curr) {
+                arr[prev + 1] = arr[prev]; // shift
+                prev--;
+            }
+
+            arr[prev + 1] = curr; // insert
+        }
+    }
+
+    public static void printsort(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
+    public static void main(String args[]) {
+        int arr[] = { 4, 2, 3, 5, 1 };
+        // int arr[] = { 1, 2, 3, 4, 5 };
+        sort(arr);
+        printsort(arr);
+    }
+}
