@@ -1,0 +1,7 @@
+1.ans-->
+the value of x will be either 0 or 1.
+ex:- 5 ^ 1;
+
+2.a=a^b
+b=b^a
+a=a^b 
