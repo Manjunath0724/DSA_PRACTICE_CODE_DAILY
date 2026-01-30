@@ -14,7 +14,7 @@ public class num_pyramid{
             System.out.println();
         }
         
-    }
+    } 
     public static void main (String []args){
         number_pyramid(7);
     }
