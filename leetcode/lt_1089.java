@@ -41,3 +41,29 @@ public class lt_1089 {
 
     }
 }
+
+// Setup
+// - Length = 7
+// - Zeros = 2
+// - Conceptual size = 9 → j = 8
+// - Start: i = 6
+
+// Iteration log
+// - i=6, j=8 → arr[6]=4 → j out of bounds → no change
+// Array: [2,0,9,1,0,2,4]
+// - i=5, j=7 → arr[5]=2 → arr[7]=2
+// Array: [2,0,9,1,0,2,2]
+// - i=4, j=6 → arr[4]=0 → arr[6]=0, arr[5]=0
+// Array: [2,0,9,1,0,0,0]
+// - i=3, j=4 → arr[3]=1 → arr[4]=1
+// Array: [2,0,9,1,1,0,0]
+// - i=2, j=3 → arr[2]=9 → arr[3]=9
+// Array: [2,0,9,9,1,0,0]
+// - i=1, j=2 → arr[1]=0 → arr[2]=0, arr[1]=0
+// Array: [2,0,0,9,1,0,0]
+// - i=0, j=0 → loop ends.
+
+// Final Result
+// [2,0,0,9,1,0,0]
+
+
