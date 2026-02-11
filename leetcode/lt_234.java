@@ -56,3 +56,33 @@ public class lt_234 {
         System.out.println("Is the linked list a palindrome? " + result);
     }
 }
+
+
+// /** another method to solve the question take an array and then add the numbers one by one to array and then compare the first and last element of the array simultenously and increase left and decreese right if yes then true or false
+//  * Definition for singly-linked list.
+//  * public class ListNode {
+//  *     int val;
+//  *     ListNode next;
+//  *     ListNode() {}
+//  *     ListNode(int val) { this.val = val; }
+//  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+//  * }
+//  */
+// class Solution {
+//     static int[] mirror = new int[100000];
+
+//     public boolean isPalindrome(ListNode head) {
+
+//         int i = 0, l = 0;
+//         while (head != null) {
+//             mirror[i++] = head.val;
+//             head = head.next;
+//         }
+
+//         while (i > 0) {
+//             if (mirror[l++] != mirror[--i])
+//                 return false;
+//         }
+//         return true;
+//     }
+// }
