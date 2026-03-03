@@ -63,3 +63,38 @@ public class lt_682 {
 
     //     return ans;
     // }
+
+
+//     class Solution {
+//     public int calPoints(String[] operations) {
+//         int n = operations.length;
+//         int[] op = new int[n];
+//         int i=0, j=0;
+//         while (i<n) {
+//             String ch = operations[i];
+
+//             if (ch.equals("+")) {
+//                 op[j] = op[j - 1] + op[j - 2];
+//                 j++;
+        
+//             }
+//             else if (ch.equals("D")) {
+//                 op[j] = 2 * op[j - 1];
+//                 j++;
+//             }
+//             else if (ch.equals("C")) {
+//                 j--;
+//             }
+//             else {
+//                 op[j] = Integer.parseInt(ch);
+//                 j++;
+//             }
+//             i++;
+//         }
+//         int sum=0;
+//         for (int k=0; k<j; k++) {
+//             sum += op[k];
+//         }
+//         return sum;
+//     }
+// }
