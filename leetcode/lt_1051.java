@@ -24,3 +24,27 @@ public class lt_1051 {
 
     }
 }
+
+// optimal approach
+// class Solution {
+// public int heightChecker(int[] heights) {
+// int[] count = new int[101]; // Step 1: frequency array
+// for (int h : heights) {
+// count[h]++; // Step 2: count occurrences of each height
+// }
+
+// int result = 0;
+// int index = 0;
+// for (int h = 1; h <= 100; h++) { // Step 3: reconstruct sorted order
+// while (count[h] > 0) {
+// if (heights[index] != h) { // Step 4: compare with original
+// result++; // mismatch → student out of place
+// }
+// index++;
+// count[h]--; // move to next occurrence
+// }
+// }
+
+// return result; // Step 5: return total mismatches
+// }
+// }
