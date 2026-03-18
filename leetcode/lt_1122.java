@@ -42,40 +42,40 @@ public class lt_1122 {
     }
 }
 
-//hashmap  appraoch
-//  // Step 1: Count how many times each number appears in arr1
-//         Map<Integer, Integer> countMap = new HashMap<>();
-//         for (int num : arr1) {
-//             countMap.put(num, countMap.getOrDefault(num, 0) + 1);
-//         }
+// hashmap appraoch 0(n+logn) time complexity and 0(n) space complexity
+// // Step 1: Count how many times each number appears in arr1
+// Map<Integer, Integer> countMap = new HashMap<>();
+// for (int num : arr1) {
+// countMap.put(num, countMap.getOrDefault(num, 0) + 1);
+// }
 
-//         // Step 2: Create a list to store the answer
-//         List<Integer> result = new ArrayList<>();
+// // Step 2: Create a list to store the answer
+// List<Integer> result = new ArrayList<>();
 
-//         // Step 3: First, add numbers in arr2 order
-//         for (int num : arr2) {
-//             int freq = countMap.get(num); // how many times num appears
-//             for (int i = 0; i < freq; i++) {
-//                 result.add(num);
-//             }
-//             countMap.remove(num); // remove so we don’t add again later
-//         }
+// // Step 3: First, add numbers in arr2 order
+// for (int num : arr2) {
+// int freq = countMap.get(num); // how many times num appears
+// for (int i = 0; i < freq; i++) {
+// result.add(num);
+// }
+// countMap.remove(num); // remove so we don’t add again later
+// }
 
-//         // Step 4: Add the leftover numbers (not in arr2), sorted
-//         List<Integer> leftovers = new ArrayList<>(countMap.keySet());
-//         Collections.sort(leftovers);
+// // Step 4: Add the leftover numbers (not in arr2), sorted
+// List<Integer> leftovers = new ArrayList<>(countMap.keySet());
+// Collections.sort(leftovers);
 
-//         for (int num : leftovers) {
-//             int freq = countMap.get(num);
-//             for (int i = 0; i < freq; i++) {
-//                 result.add(num);
-//             }
-//         }
+// for (int num : leftovers) {
+// int freq = countMap.get(num);
+// for (int i = 0; i < freq; i++) {
+// result.add(num);
+// }
+// }
 
-//         // Step 5: Convert list back to array
-//         int[] ans = new int[result.size()];
-//         for (int i = 0; i < result.size(); i++) {
-//             ans[i] = result.get(i);
-//         }
+// // Step 5: Convert list back to array
+// int[] ans = new int[result.size()];
+// for (int i = 0; i < result.size(); i++) {
+// ans[i] = result.get(i);
+// }
 
-//         return ans;
+// return ans;
