@@ -27,3 +27,4 @@ public class lt_1991 {
         System.out.println(result); // Output: 3
     }
 }
+///best apoarach
