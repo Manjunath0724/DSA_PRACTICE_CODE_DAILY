@@ -27,4 +27,5 @@ public class lt_1920 {
             System.out.print(num + " ");
         }
     }
+    //pn-1920
 }
