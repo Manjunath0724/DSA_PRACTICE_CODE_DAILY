@@ -13,8 +13,7 @@ public class lt_2639 {
         }
         return ans;
     }
-
-    public static void main(String[] args) {
+lt-    public static void main(String[] args) {
         lt_2639 s = new lt_2639();
         int[][] grid = { { 1, 22, 333 }, { 4444, 55555, 666666 } };
         int[] result = s.findColumnWidth(grid);
