@@ -18,9 +18,7 @@ public class lt_1534 {
                 }
             }
         }
-
         return goodTriplets;
-
     }
 
     public static void main(String[] args) {
